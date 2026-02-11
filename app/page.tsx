@@ -4,37 +4,56 @@ export default function HomePage() {
   return (
     <main>
 
-      {/* Hero Section */}
-      <section
-        style={{
-          background: "#111",
-          color: "white",
-          padding: "120px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "52px", marginBottom: "20px" }}>
-          Classic American Fare
-        </h1>
+     {/* Hero Section */}
+<section
+  style={{
+    position: "relative",
+    background: "#111",
+    color: "white",
+    padding: "140px 20px",
+    textAlign: "center",
+    overflow: "hidden"
+  }}
+>
+  {/* Watermark Logo */}
+  <img
+    src="/logo.png"
+    alt="Watermark Logo"
+    style={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      width: "600px",
+      opacity: 0.06,
+      pointerEvents: "none"
+    }}
+  />
 
-        <p style={{ fontSize: "22px", marginBottom: "40px" }}>
-          Burgers • Craft Beer • Washington DC
-        </p>
+  <div style={{ position: "relative", zIndex: 2 }}>
+    <h1 style={{ fontSize: "52px", marginBottom: "20px" }}>
+      Classic American Fare
+    </h1>
+    <p style={{ fontSize: "22px", marginBottom: "40px" }}>
+      Burgers • Craft Beer • Washington DC
+    </p>
 
-        <Link
-          href="/menu"
-          style={{
-            background: "white",
-            color: "black",
-            padding: "14px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
-          View Menu
-        </Link>
-      </section>
+    <a
+      href="/menu"
+      style={{
+        background: "white",
+        color: "black",
+        padding: "14px 28px",
+        borderRadius: "8px",
+        textDecoration: "none",
+        fontWeight: "bold"
+      }}
+    >
+      View Menu
+    </a>
+  </div>
+</section>
+
 
       {/* Location Section */}
       <section style={{ padding: "80px 20px", textAlign: "center" }}>
