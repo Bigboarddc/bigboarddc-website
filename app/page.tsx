@@ -16,7 +16,7 @@ export default function HomePage() {
   }}
 >
   {/* Watermark Logo */}
-  <img
+ <img
   src="/logo.png"
   alt="Watermark Logo"
   style={{
@@ -24,13 +24,14 @@ export default function HomePage() {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "70%",
-    maxWidth: "700px",
+    width: "55%",
+    maxWidth: "500px",
     opacity: 0.08,
     filter: "invert(1)",
     pointerEvents: "none"
   }}
 />
+
 
 
   <div style={{ position: "relative", zIndex: 2 }}>
