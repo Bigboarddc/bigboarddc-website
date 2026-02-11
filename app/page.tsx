@@ -81,36 +81,63 @@ export default function HomePage() {
       style={{
         display: "grid",
         gridTemplateColumns: "1fr 1fr",
-        maxWidth: "600px",
+        maxWidth: "700px",
         margin: "0 auto",
-        gap: "80px",
-        textAlign: "center"
+        gap: "100px"
       }}
     >
       {/* Bar Hours */}
       <div>
         <h3 style={{ marginBottom: "25px" }}>Bar</h3>
 
-        <div>Mon — 5pm–12am</div>
-        <div>Tue — 5pm–12am</div>
-        <div>Wed — 5pm–12am</div>
-        <div>Thu — 5pm–12am</div>
-        <div>Fri — 5pm–1am</div>
-        <div>Sat — 12pm–1am</div>
-        <div>Sun — 12pm–12am</div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Mon</span><span>5pm–12am</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Tue</span><span>5pm–12am</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Wed</span><span>5pm–12am</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Thu</span><span>5pm–12am</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Fri</span><span>5pm–1am</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Sat</span><span>12pm–1am</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Sun</span><span>12pm–12am</span>
+        </div>
       </div>
 
       {/* Kitchen Hours */}
       <div>
         <h3 style={{ marginBottom: "25px" }}>Kitchen</h3>
 
-        <div>Mon — 5pm–10pm</div>
-        <div>Tue — 5pm–10pm</div>
-        <div>Wed — 5pm–10pm</div>
-        <div>Thu — 5pm–10pm*</div>
-        <div>Fri — 5pm–10pm*</div>
-        <div>Sat — 12pm–10pm*</div>
-        <div>Sun — 12pm–10pm</div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Mon</span><span>5pm–10pm</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Tue</span><span>5pm–10pm</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Wed</span><span>5pm–10pm</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Thu</span><span>5pm–10pm*</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Fri</span><span>5pm–10pm*</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Sat</span><span>12pm–10pm*</span>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Sun</span><span>12pm–10pm</span>
+        </div>
       </div>
     </div>
 
