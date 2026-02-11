@@ -25,7 +25,7 @@ export default function HomePage() {
       left: "50%",
       transform: "translate(-50%, -50%)",
       width: "600px",
-      opacity: 0.06,
+      opacity: 0.12,
       pointerEvents: "none"
     }}
   />
