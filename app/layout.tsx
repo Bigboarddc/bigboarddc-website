@@ -39,8 +39,8 @@ export default function RootLayout({
       <Image
         src="/logo.png"
         alt="The Big Board Logo"
-        width={80}
-        height={80}
+        width={70}
+        height={70}
         priority
       />
     </Link>
@@ -49,7 +49,7 @@ export default function RootLayout({
   href="/"
   className={playfair.className}
   style={{
-    fontSize: "44px",
+    fontSize: "54px",
     fontWeight: "800",
     textDecoration: "none",
     color: "black",
