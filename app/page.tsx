@@ -17,18 +17,21 @@ export default function HomePage() {
 >
   {/* Watermark Logo */}
   <img
-    src="/logo.png"
-    alt="Watermark Logo"
-    style={{
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      width: "600px",
-      opacity: 0.12,
-      pointerEvents: "none"
-    }}
-  />
+  src="/logo.png"
+  alt="Watermark Logo"
+  style={{
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "70%",
+    maxWidth: "700px",
+    opacity: 0.08,
+    filter: "invert(1)",
+    pointerEvents: "none"
+  }}
+/>
+
 
   <div style={{ position: "relative", zIndex: 2 }}>
     <h1 style={{ fontSize: "52px", marginBottom: "20px" }}>
