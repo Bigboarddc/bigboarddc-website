@@ -38,17 +38,19 @@ export default function RootLayout({
     </Link>
 
     <Link
-      href="/"
-      style={{
-        fontSize: "24px",
-        fontWeight: "bold",
-        textDecoration: "none",
-        color: "black",
-        letterSpacing: "1px"
-      }}
-    >
-      The Big Board
-    </Link>
+  href="/"
+  style={{
+    fontSize: "42px",
+    fontWeight: "800",
+    textDecoration: "none",
+    color: "black",
+    letterSpacing: "2px",
+    textTransform: "uppercase"
+  }}
+>
+  The Big Board
+</Link>
+
   </div>
 
   <nav style={{ display: "flex", gap: "30px", fontWeight: "bold" }}>
