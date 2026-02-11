@@ -1,6 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["700", "800", "900"],
+});
+
+
 export const metadata = {
   title: "The Big Board | Washington DC",
   description:
@@ -39,17 +47,18 @@ export default function RootLayout({
 
     <Link
   href="/"
+  className={playfair.className}
   style={{
-    fontSize: "42px",
+    fontSize: "44px",
     fontWeight: "800",
     textDecoration: "none",
     color: "black",
-    letterSpacing: "2px",
-    textTransform: "uppercase"
+    letterSpacing: "2px"
   }}
 >
   The Big Board
 </Link>
+
 
   </div>
 
