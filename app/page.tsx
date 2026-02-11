@@ -56,13 +56,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Location Section */}
-      <section style={{ padding: "80px 20px", textAlign: "center" }}>
-        <h2 style={{ fontSize: "32px" }}>Visit Us</h2>
-        <p style={{ fontSize: "18px" }}>
-          421 H St NE, Washington, DC 20002
-        </p>
-      </section>
 
 {/* Hours Section */}
 <section
@@ -153,6 +146,55 @@ export default function HomePage() {
       *Smaller late night menu available from 10:30pm – 12:30am
     </p>
   </div>
+</section>
+{/* TV Packages Section */}
+<section
+  style={{
+    padding: "80px 20px",
+    background: "#f8f8f8",
+    textAlign: "center"
+  }}
+>
+  <h2 style={{ fontSize: "32px", marginBottom: "40px" }}>
+    Sports & TV Packages
+  </h2>
+
+  <div
+    style={{
+      maxWidth: "900px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "20px",
+      fontSize: "18px"
+    }}
+  >
+    <div>NFL Sunday Ticket</div>
+    <div>SEC Network</div>
+    <div>MLB Extra Innings</div>
+    <div>B1G Ten Network</div>
+    <div>MASN</div>
+    <div>
+      Direct TV Sports Package  
+      <div style={{ fontSize: "14px", marginTop: "5px", color: "#555" }}>
+        (ESPN, ESPN2, ESPNU, FS1, CBSSN, ESPN+)
+      </div>
+      <div style={{ fontSize: "14px", color: "#555" }}>
+        Call for ESPN+ Availability
+      </div>
+    </div>
+  </div>
+</section>
+
+   {/* Location Section */}
+<section style={{ padding: "80px 20px", textAlign: "center" }}>
+  <h2 style={{ fontSize: "32px" }}>Visit Us</h2>
+  <p style={{ fontSize: "18px", marginBottom: "10px" }}>
+    421 H St NE, Washington, DC 20002
+  </p>
+  <p style={{ fontSize: "18px", fontWeight: "bold" }}>
+    202-543-3630
+  </p>
 </section>
 
     </main>
