@@ -64,76 +64,67 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* Hours Section */}
-      <section
-        style={{
-          padding: "80px 20px",
-          background: "#f8f8f8"
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "900px",
-            margin: "0 auto"
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "32px",
-              textAlign: "center",
-              marginBottom: "40px"
-            }}
-          >
-            Hours
-          </h2>
+{/* Hours Section */}
+<section
+  style={{
+    padding: "80px 20px",
+    background: "#f8f8f8",
+    textAlign: "center"
+  }}
+>
+  <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+    <h2 style={{ fontSize: "32px", marginBottom: "60px" }}>
+      Hours
+    </h2>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "40px",
-              fontSize: "18px"
-            }}
-          >
-            {/* Bar Hours */}
-            <div>
-              <h3 style={{ marginBottom: "20px" }}>Bar Hours</h3>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        maxWidth: "600px",
+        margin: "0 auto",
+        gap: "80px",
+        textAlign: "center"
+      }}
+    >
+      {/* Bar Hours */}
+      <div>
+        <h3 style={{ marginBottom: "25px" }}>Bar</h3>
 
-              <div>Mon — 5pm–12am</div>
-              <div>Tue — 5pm–12am</div>
-              <div>Wed — 5pm–12am</div>
-              <div>Thu — 5pm–12am</div>
-              <div>Fri — 5pm–1am</div>
-              <div>Sat — 12pm–1am</div>
-              <div>Sun — 12pm–12am</div>
-            </div>
+        <div>Mon — 5pm–12am</div>
+        <div>Tue — 5pm–12am</div>
+        <div>Wed — 5pm–12am</div>
+        <div>Thu — 5pm–12am</div>
+        <div>Fri — 5pm–1am</div>
+        <div>Sat — 12pm–1am</div>
+        <div>Sun — 12pm–12am</div>
+      </div>
 
-            {/* Kitchen Hours */}
-            <div>
-              <h3 style={{ marginBottom: "20px" }}>Kitchen Hours</h3>
+      {/* Kitchen Hours */}
+      <div>
+        <h3 style={{ marginBottom: "25px" }}>Kitchen</h3>
 
-              <div>Mon — 5pm–10pm</div>
-              <div>Tue — 5pm–10pm</div>
-              <div>Wed — 5pm–10pm</div>
-              <div>Thu — 5pm–10pm*</div>
-              <div>Fri — 5pm–10pm*</div>
-              <div>Sat — 12pm–10pm*</div>
-              <div>Sun — 12pm–10pm</div>
-            </div>
-          </div>
+        <div>Mon — 5pm–10pm</div>
+        <div>Tue — 5pm–10pm</div>
+        <div>Wed — 5pm–10pm</div>
+        <div>Thu — 5pm–10pm*</div>
+        <div>Fri — 5pm–10pm*</div>
+        <div>Sat — 12pm–10pm*</div>
+        <div>Sun — 12pm–10pm</div>
+      </div>
+    </div>
 
-          <p
-            style={{
-              marginTop: "30px",
-              fontSize: "14px",
-              textAlign: "center",
-              color: "#555"
-            }}
-          >
-            *Smaller late night menu available from 10:30pm – 12:30am
-          </p>
-        </div>
-      </section>
+    <p
+      style={{
+        marginTop: "40px",
+        fontSize: "14px",
+        color: "#555"
+      }}
+    >
+      *Smaller late night menu available from 10:30pm – 12:30am
+    </p>
+  </div>
+</section>
 
     </main>
   );
