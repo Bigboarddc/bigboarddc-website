@@ -81,63 +81,65 @@ export default function HomePage() {
       style={{
         display: "grid",
         gridTemplateColumns: "1fr 1fr",
-        maxWidth: "700px",
+        maxWidth: "600px",
         margin: "0 auto",
-        gap: "100px"
+        gap: "120px"
       }}
     >
       {/* Bar Hours */}
       <div>
         <h3 style={{ marginBottom: "25px" }}>Bar</h3>
 
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Mon</span><span>5pm–12am</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Tue</span><span>5pm–12am</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Wed</span><span>5pm–12am</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Thu</span><span>5pm–12am</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Fri</span><span>5pm–1am</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Sat</span><span>12pm–1am</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Sun</span><span>12pm–12am</span>
-        </div>
+        {[
+          ["Mon", "5pm–12am"],
+          ["Tue", "5pm–12am"],
+          ["Wed", "5pm–12am"],
+          ["Thu", "5pm–12am"],
+          ["Fri", "5pm–1am"],
+          ["Sat", "12pm–1am"],
+          ["Sun", "12pm–12am"],
+        ].map(([day, hours]) => (
+          <div
+            key={day}
+            style={{
+              display: "grid",
+              gridTemplateColumns: "60px 120px",
+              justifyContent: "center",
+              marginBottom: "6px"
+            }}
+          >
+            <span>{day}</span>
+            <span style={{ textAlign: "right" }}>{hours}</span>
+          </div>
+        ))}
       </div>
 
       {/* Kitchen Hours */}
       <div>
         <h3 style={{ marginBottom: "25px" }}>Kitchen</h3>
 
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Mon</span><span>5pm–10pm</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Tue</span><span>5pm–10pm</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Wed</span><span>5pm–10pm</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Thu</span><span>5pm–10pm*</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Fri</span><span>5pm–10pm*</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Sat</span><span>12pm–10pm*</span>
-        </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Sun</span><span>12pm–10pm</span>
-        </div>
+        {[
+          ["Mon", "5pm–10pm"],
+          ["Tue", "5pm–10pm"],
+          ["Wed", "5pm–10pm"],
+          ["Thu*", "5pm–10pm"],
+          ["Fri*", "5pm–10pm"],
+          ["Sat*", "12pm–10pm"],
+          ["Sun", "12pm–10pm"],
+        ].map(([day, hours]) => (
+          <div
+            key={day}
+            style={{
+              display: "grid",
+              gridTemplateColumns: "60px 120px",
+              justifyContent: "center",
+              marginBottom: "6px"
+            }}
+          >
+            <span>{day}</span>
+            <span style={{ textAlign: "right" }}>{hours}</span>
+          </div>
+        ))}
       </div>
     </div>
 
