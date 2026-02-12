@@ -1,3 +1,4 @@
+          import Image from "next/image";
 export const metadata = {
   title: "Menu | The Big Board Washington DC",
   description:
@@ -45,7 +46,6 @@ export default function MenuPage() {
       <section style={{ textAlign: "center", padding: "60px 20px" }}>
         <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
           Food Menu
-          import Image from "next/image";
         </h1>
 
         <a
