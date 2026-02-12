@@ -45,6 +45,7 @@ export default function MenuPage() {
       <section style={{ textAlign: "center", padding: "60px 20px" }}>
         <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
           Food Menu
+          import Image from "next/image";
         </h1>
 
         <a
@@ -64,6 +65,27 @@ export default function MenuPage() {
           Order Online with Uber Eats
         </a>
       </section>
+  <div
+  style={{
+    marginTop: "40px",
+    display: "flex",
+    justifyContent: "center"
+  }}
+>
+  <Image
+    src="/menu-hero.jpg"
+    alt="The Big Board Food"
+    width={1000}
+    height={600}
+    style={{
+      width: "100%",
+      maxWidth: "900px",
+      height: "auto",
+      borderRadius: "12px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15)"
+    }}
+  />
+</div>
 
       <div style={sectionStyle}>
         {/* STARTERS */}
