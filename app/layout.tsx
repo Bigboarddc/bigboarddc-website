@@ -8,6 +8,14 @@ const playfair = Playfair_Display({
   weight: ["700", "800", "900"],
 });
 
+import { Oswald } from "next/font/google";
+
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+});
+
+
 
 export const metadata = {
   title: "The Big Board | Washington DC",
@@ -47,7 +55,7 @@ export default function RootLayout({
 
     <Link
   href="/"
-  className={playfair.className}
+  className={oswald.className}
   style={{
     fontSize: "54px",
     fontWeight: "800",
