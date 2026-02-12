@@ -1,40 +1,64 @@
 export const metadata = {
   title: "Menu | The Big Board Washington DC",
   description:
-    "View the full food menu for The Big Board located at 421 H St NE Washington DC."
+    "View the full food menu for The Big Board located at 421 H St NE Washington DC.",
 };
 
 export default function MenuPage() {
   const sectionStyle = {
     maxWidth: "900px",
     margin: "0 auto",
-    padding: "40px 20px"
+    padding: "40px 20px",
   };
 
-  const rowStyle = {
+  const sectionHeader = {
+    fontSize: "28px",
+    marginTop: "50px",
+    marginBottom: "20px",
+    borderBottom: "2px solid #111",
+    paddingBottom: "8px",
+  };
+
+  const itemContainer = {
+    padding: "14px 0",
+    borderBottom: "1px solid #eee",
+  };
+
+  const itemTitleStyle = {
     display: "flex",
     justifyContent: "space-between",
-    padding: "10px 0",
-    borderBottom: "1px solid #eee"
+    fontWeight: 600,
+    fontSize: "18px",
+  };
+
+  const descriptionStyle = {
+    marginLeft: "20px",
+    marginTop: "6px",
+    fontSize: "15px",
+    color: "#555",
+    lineHeight: "1.6",
   };
 
   return (
     <main style={{ fontFamily: "Arial, sans-serif" }}>
+      {/* Hero */}
       <section style={{ textAlign: "center", padding: "60px 20px" }}>
-        <h1 style={{ fontSize: "42px" }}>Food Menu</h1>
+        <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
+          Food Menu
+        </h1>
+
         <a
           href="https://www.ubereats.com/store/the-big-board-421-h-st-ne/QamoMbACXcyVGG2TQRjdBQ?diningMode=DELIVERY&ps=1&surfaceName="
           target="_blank"
           rel="noopener noreferrer"
           style={{
             display: "inline-block",
-            marginTop: "20px",
             background: "black",
             color: "white",
             padding: "12px 24px",
             borderRadius: "8px",
             textDecoration: "none",
-            fontWeight: "bold"
+            fontWeight: "bold",
           }}
         >
           Order Online with Uber Eats
@@ -42,58 +66,87 @@ export default function MenuPage() {
       </section>
 
       <div style={sectionStyle}>
-        
-        {/* Starters */}
-        <h2>Starters</h2>
-        <div style={rowStyle}><span>Chicken Wings</span><span>$14.00</span></div>
-        <div style={rowStyle}><span>Hummus Plate</span><span>$12.00</span></div>
-        <div style={rowStyle}><span>Catfish Bites</span><span>$14.00</span></div>
-        <div style={rowStyle}><span>Fried Pickles (sm/lg)</span><span>$7.00 / $11.00</span></div>
-        <div style={rowStyle}><span>Mozzarella Sticks</span><span>$12.00</span></div>
+        {/* STARTERS */}
+        <h2 style={sectionHeader}>Starters</h2>
 
-        {/* Sides */}
-        <h2 style={{ marginTop: "40px" }}>Sides</h2>
-        <div style={rowStyle}><span>Sweet Potato Fries</span><span>$7.75</span></div>
-        <div style={rowStyle}><span>Hand-cut French Fries</span><span>$6.00</span></div>
-        <div style={rowStyle}><span>Onion Rings</span><span>$8.00</span></div>
-        <div style={rowStyle}><span>House Cole Slaw</span><span>$4.75</span></div>
-        <div style={rowStyle}><span>Side Salad (sm/lg)</span><span>$5.25 / $9.25</span></div>
-        <div style={rowStyle}><span>Corn on the Cob</span><span>$4.00</span></div>
-        <div style={rowStyle}><span>Vegetable of the Day</span><span>$6.00</span></div>
+        <MenuItem
+          name="Chicken Wings"
+          price="$14.00"
+          description="Choose from Buffalo, Habanero BBQ, Kung Pao, Honey Mustard BBQ or Old Bay Rub. Served with blue cheese sauce or ranch. Extra sauces 25¢ ea."
+        />
 
-        {/* Entrée Salads */}
-        <h2 style={{ marginTop: "40px" }}>Entrée Salads</h2>
-        <div style={rowStyle}><span>Grilled Salmon Salad</span><span>$18.00</span></div>
-        <div style={rowStyle}><span>Beef Burger Salad</span><span>$15.50</span></div>
-        <div style={rowStyle}><span>Chicken Breast Salad</span><span>$14.50</span></div>
+        <MenuItem
+          name="Hummus Plate"
+          price="$12.00"
+          description="Served with pretzels, cucumbers and tomatoes."
+        />
 
-        {/* Vegetarian */}
-        <h2 style={{ marginTop: "40px" }}>Vegetarian</h2>
-        <div style={rowStyle}><span>Wild Austin Rose</span><span>$12.99</span></div>
-        <div style={rowStyle}><span>Casablanca</span><span>$12.99</span></div>
+        <MenuItem
+          name="Catfish Bites"
+          price="$14.00"
+          description="Seasoned & deep fried. Served with sweet & spicy chili sauce."
+        />
 
-        {/* Chicken & Fish */}
-        <h2 style={{ marginTop: "40px" }}>Chicken & Fish</h2>
-        <div style={rowStyle}><span>Jalisco Frito</span><span>$13.50</span></div>
-        <div style={rowStyle}><span>The Atlantic</span><span>$14.50</span></div>
-        <div style={rowStyle}><span>Fried Cod</span><span>$14.50</span></div>
+        <MenuItem
+          name="Fried Pickles (sm/lg)"
+          price="$7.00 / $11.00"
+          description="Battered pickle slices deep fried with harissa aioli."
+        />
 
-        {/* Burgers */}
-        <h2 style={{ marginTop: "40px" }}>Burgers</h2>
-        <div style={rowStyle}><span>Port d’Amsterdam (6oz / 8oz)</span><span>$12.99 / $15.50</span></div>
-        <div style={rowStyle}><span>Ciao Bella (6oz / 8oz)</span><span>$12.99 / $15.50</span></div>
-        <div style={rowStyle}><span>Le Burg-aire au Poivre (6oz / 8oz)</span><span>$12.99 / $15.50</span></div>
-        <div style={rowStyle}><span>The Big Apple (6oz / 8oz)</span><span>$12.99 / $15.50</span></div>
-        <div style={rowStyle}><span>Memphis Blues 3.0 (6oz / 8oz)</span><span>$12.99 / $15.50</span></div>
-        <div style={rowStyle}><span>The Great Chicago Fire (6oz / 8oz)</span><span>$12.99 / $15.50</span></div>
-        <div style={rowStyle}><span>Quebec City (6oz / 8oz)</span><span>$12.99 / $15.50</span></div>
-        <div style={rowStyle}><span>Build Your Own (6oz / 8oz)</span><span>$11.00 / $13.00</span></div>
+        <MenuItem
+          name="Mozzarella Sticks"
+          price="$12.00"
+          description="Crispy herb-battered mozzarella with marinara."
+        />
 
-        <p style={{ fontSize: "12px", marginTop: "30px", color: "#666" }}>
-          *Consuming raw or undercooked animal proteins may increase the risk of foodborne illness.
+        {/* SALADS */}
+        <h2 style={sectionHeader}>Entrée Salads</h2>
+
+        <MenuItem
+          name="Grilled Salmon Salad"
+          price="$18.00"
+          description="Atlantic salmon over mixed greens with cucumber, tomato, & onion."
+        />
+
+        <MenuItem
+          name="Beef Burger Salad"
+          price="$15.50"
+          description="Grilled beef burger over mixed greens with smoked bacon, cucumber, tomato, & onion."
+        />
+
+        <MenuItem
+          name="Chicken Breast Salad"
+          price="$14.50"
+          description="Chicken breast (crispy or grilled) over mixed greens with cucumber, tomato, & onion."
+        />
+
+        {/* BURGERS */}
+        <h2 style={sectionHeader}>Burgers</h2>
+
+        <p style={{ color: "#555", marginBottom: "20px" }}>
+          All burgers are 100% all-natural beef. Potato–sesame buns baked fresh
+          from Gold Crust Bakery. Ask about our gluten free options!
         </p>
 
-      </div>
-    </main>
-  );
-}
+        <MenuItem
+          name="Port d’Amsterdam (6oz / 8oz)"
+          price="$12.99 / $15.50"
+          description="Sautéed cremini mushrooms, port reduction, & aged Swiss."
+        />
+
+        <MenuItem
+          name="Ciao Bella (6oz / 8oz)"
+          price="$12.99 / $15.50"
+          description="Sliced prosciutto, mozzarella, roasted red pepper, & sweet red pepper aioli."
+        />
+
+        <MenuItem
+          name="Le Burg-aire au Poivre (6oz / 8oz)"
+          price="$12.99 / $15.50"
+          description="Seared with cracked black pepper, topped with blue cheese & a cognac cream sauce."
+        />
+
+        <MenuItem
+          name="The Big Apple (6oz / 8oz)"
+          price="$12.99 / $15.50"
+          description="Topped with applewood-smoked bacon, American chee
