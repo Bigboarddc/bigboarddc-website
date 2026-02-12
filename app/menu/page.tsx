@@ -73,7 +73,6 @@ export default function MenuPage() {
     justifyContent: "center"
   }}
 >
- import Image from "next/image";
 <Image
     src="/menu-hero.jpg"
     alt="The Big Board Food"
