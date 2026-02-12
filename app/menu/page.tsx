@@ -1,4 +1,4 @@
-          import Image from "next/image";
+         
 
 export const metadata = {
   title: "Menu | The Big Board Washington DC",
@@ -73,7 +73,8 @@ export default function MenuPage() {
     justifyContent: "center"
   }}
 >
-  <Image
+ import Image from "next/image";
+<Image
     src="/menu-hero.jpg"
     alt="The Big Board Food"
     width={1000}
