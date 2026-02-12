@@ -149,4 +149,80 @@ export default function MenuPage() {
         <MenuItem
           name="The Big Apple (6oz / 8oz)"
           price="$12.99 / $15.50"
-          description="Topped with applewood-smoked bacon, American chee
+          description="Topped with applewood-smoked bacon, American cheese, sliced tomato, & pickles."
+        />
+
+        <MenuItem
+          name="Memphis Blues 3.0 (6oz / 8oz)"
+          price="$12.99 / $15.50"
+          description="Provolone cheese, house barbecue sauce, & crispy steak cut onion rings."
+        />
+
+        <MenuItem
+          name="The Great Chicago Fire (6oz / 8oz)"
+          price="$12.99 / $15.50"
+          description="Chipotle-dusted burger topped with fire-roasted chili & mango salsa, pepper jack cheese, & chipotle aioli. Served with mango-habanero sauce. (SPICY)"
+        />
+
+        <MenuItem
+          name="Quebec City (6oz / 8oz)"
+          price="$12.99 / $15.50"
+          description="Crispy hand-cut French fries, brown gravy, & melted cheese curds."
+        />
+
+        <MenuItem
+          name="Build Your Own Burger (6oz / 8oz)"
+          price="$11.00 / $13.00"
+          description="Choose from our toppings and call it whatever you like! Served with lettuce, tomato, onion, & pickles."
+        />
+
+        <p style={{ marginTop: "40px", fontSize: "14px", color: "#777" }}>
+          *Consuming raw or undercooked animal proteins may increase the risk
+          of foodborne illness.
+        </p>
+      </div>
+    </main>
+  );
+}
+
+/* Reusable Menu Item Component */
+
+function MenuItem({
+  name,
+  price,
+  description,
+}: {
+  name: string;
+  price: string;
+  description?: string;
+}) {
+  return (
+    <div style={{ padding: "14px 0", borderBottom: "1px solid #eee" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          fontWeight: 600,
+          fontSize: "18px",
+        }}
+      >
+        <span>{name}</span>
+        <span>{price}</span>
+      </div>
+
+      {description && (
+        <div
+          style={{
+            marginLeft: "20px",
+            marginTop: "6px",
+            fontSize: "15px",
+            color: "#555",
+            lineHeight: "1.6",
+          }}
+        >
+          {description}
+        </div>
+      )}
+    </div>
+  );
+}
