@@ -1,4 +1,6 @@
           import Image from "next/image";
+          src="/menu-hero.jpg"
+
 export const metadata = {
   title: "Menu | The Big Board Washington DC",
   description:
