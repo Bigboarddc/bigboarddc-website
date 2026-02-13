@@ -199,15 +199,7 @@ export default function MenuPage() {
           description="Choose from our toppings and call it whatever you like! Served with lettuce, tomato, onion, & pickles."
         />
 
-        <p style={{ marginTop: "40px", fontSize: "14px", color: "#777" }}>
-          *Consuming raw or undercooked animal proteins may increase the risk
-          of foodborne illness.
-        </p>
-      </div>
-    </main>
-  );
-}
-        {/* SIDES */}
+       {/* SIDES */}
         <h2 style={sectionHeader}>Sides</h2>
 
         <MenuItem name="Sweet Potato Fries" price="$7.75" />
@@ -231,6 +223,15 @@ export default function MenuPage() {
         <MenuItem name="The Atlantic" price="$14.50" />
         <MenuItem name="Fried Cod" price="$14.50" />
 
+        <p style={{ marginTop: "40px", fontSize: "14px", color: "#777" }}>
+          *Consuming raw or undercooked animal proteins may increase the risk
+          of foodborne illness.
+        </p>
+      </div>
+    </main>
+  );
+}
+        
 /* Reusable Menu Item Component */
 
 function MenuItem({
