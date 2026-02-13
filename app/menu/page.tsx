@@ -207,6 +207,29 @@ export default function MenuPage() {
     </main>
   );
 }
+        {/* SIDES */}
+        <h2 style={sectionHeader}>Sides</h2>
+
+        <MenuItem name="Sweet Potato Fries" price="$7.75" />
+        <MenuItem name="Hand-cut French Fries" price="$6.00" />
+        <MenuItem name="Onion Rings" price="$8.00" />
+        <MenuItem name="House Cole Slaw" price="$4.75" />
+        <MenuItem name="Side Salad (sm/lg)" price="$5.25 / $9.25" />
+        <MenuItem name="Corn on the Cob" price="$4.00" />
+        <MenuItem name="Vegetable of the Day" price="$6.00" />
+
+        {/* VEGETARIAN */}
+        <h2 style={sectionHeader}>Vegetarian</h2>
+
+        <MenuItem name="Wild Austin Rose" price="$12.99" />
+        <MenuItem name="Casablanca" price="$12.99" />
+
+        {/* CHICKEN & FISH */}
+        <h2 style={sectionHeader}>Chicken & Fish</h2>
+
+        <MenuItem name="Jalisco Frito" price="$13.50" />
+        <MenuItem name="The Atlantic" price="$14.50" />
+        <MenuItem name="Fried Cod" price="$14.50" />
 
 /* Reusable Menu Item Component */
 
