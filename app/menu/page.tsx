@@ -199,29 +199,77 @@ export default function MenuPage() {
           description="Choose from our toppings and call it whatever you like! Served with lettuce, tomato, onion, & pickles."
         />
 
-       {/* SIDES */}
+               {/* SIDES */}
         <h2 style={sectionHeader}>Sides</h2>
 
-        <MenuItem name="Sweet Potato Fries" price="$7.75" />
-        <MenuItem name="Hand-cut French Fries" price="$6.00" />
-        <MenuItem name="Onion Rings" price="$8.00" />
-        <MenuItem name="House Cole Slaw" price="$4.75" />
-        <MenuItem name="Side Salad (sm/lg)" price="$5.25 / $9.25" />
-        <MenuItem name="Corn on the Cob" price="$4.00" />
-        <MenuItem name="Vegetable of the Day" price="$6.00" />
+        <MenuItem
+          name="Sweet Potato Fries"
+          price="$7.75"
+          description="Crispy sweet potato fries served with parmesean, garlic and parsley."
+        />
+        <MenuItem
+          name="Hand-cut French Fries"
+          price="$6.00"
+          description="Fresh hand-cut fries with old bay or salt & pepper, fried to golden perfection."
+        />
+        <MenuItem
+          name="Onion Rings"
+          price="$8.00"
+          description="Thick-cut onion rings in a crispy seasoned batter."
+        />
+        <MenuItem
+          name="House Cole Slaw"
+          price="$4.75"
+          description="Creamy house-made coleslaw with a light tangy dressing."
+        />
+        <MenuItem
+          name="Side Salad (sm/lg)"
+          price="$5.25 / $9.25"
+          description="Mixed greens with cucumber, tomato, and onion."
+        />
+        <MenuItem
+          name="Corn on the Cob"
+          price="$4.00"
+          description="Fresh corn on the cob, buttered with chipotle spice, parmesean and parsley."
+        />
+        <MenuItem
+          name="Vegetable of the Day"
+          price="$6.00"
+          description="Ask your server about today’s seasonal vegetable selection."
+        />
 
         {/* VEGETARIAN */}
         <h2 style={sectionHeader}>Vegetarian</h2>
 
-        <MenuItem name="Wild Austin Rose" price="$12.99" />
-        <MenuItem name="Casablanca" price="$12.99" />
+        <MenuItem
+          name="Wild Austin Rose"
+          price="$12.99"
+          description="Mushroom patty topped with Gucamole and onion rings."
+        />
+        <MenuItem
+          name="Casablanca"
+          price="$12.99"
+          description="Black bean and chickpea patty with minted cucumbers and harissa aioli."
+        />
 
         {/* CHICKEN & FISH */}
         <h2 style={sectionHeader}>Chicken & Fish</h2>
 
-        <MenuItem name="Jalisco Frito" price="$13.50" />
-        <MenuItem name="The Atlantic" price="$14.50" />
-        <MenuItem name="Fried Cod" price="$14.50" />
+        <MenuItem
+          name="Jalisco Frito"
+          price="$13.50"
+          description="Crispy fried chicken breast with mango habanero sauce, pepperjack, bacon lettuce and tomato."
+        />
+        <MenuItem
+          name="The Atlantic"
+          price="$14.50"
+          description="Atlantic salmon patty topped with coleslaw and wasabi aioli."
+        />
+        <MenuItem
+          name="Fried Cod"
+          price="$14.50"
+          description="Buttermilk battered cod with chipotle aioli, lettuce and tomato."
+        />
 
         <p style={{ marginTop: "40px", fontSize: "14px", color: "#777" }}>
           *Consuming raw or undercooked animal proteins may increase the risk
