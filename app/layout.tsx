@@ -21,6 +21,9 @@ export const metadata = {
   title: "The Big Board | Washington DC",
   description:
     "Classic American Fare & Craft Beer at 421 H St NE Washington DC 20002",
+  verification: {
+    google: "LgRFdm8v7Wi_WtM56LV8VxnpTcXIeTD6g3xO3Oefvg4",
+  },
 };
 
 export default function RootLayout({
