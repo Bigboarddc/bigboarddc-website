@@ -89,8 +89,8 @@ export default function HomePage() {
           ["Wed", "5pm–12am"],
           ["Thu", "5pm–12am"],
           ["Fri", "5pm–1am"],
-          ["Sat", "12pm–1am"],
-          ["Sun", "12pm–12am"],
+          ["Sat", "5pm–1am"],
+          ["Sun", "5pm–12am"],
         ].map(([day, hours]) => (
           <div
             key={day}
